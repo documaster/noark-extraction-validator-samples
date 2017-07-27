@@ -1,0 +1,512 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<addml xmlns="http://www.arkivverket.no/standarder/addml"
+       xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       name="Noark 5-arkivuttrekk"
+       xsi:schemaLocation="http://www.arkivverket.no/standarder/addml addml.xsd">
+  
+   <dataset>
+      <description>Noark 5-arkivuttrekk</description>
+      <reference>
+         <context>
+            <additionalElements>
+               <additionalElement name="recordCreators">
+                  <additionalElements>
+                  	 <additionalElement name="recordCreator"><value>fonds creator id - fonds creator name</value></additionalElement>
+                  </additionalElements>
+               </additionalElement>
+               <additionalElement name="systemType">
+                  <!-- Sakarkiv (Noark-5) -->
+                  <value>Sakarkiv (Noark-5)</value>
+               </additionalElement>
+               <additionalElement name="systemName">
+                  <!-- Oppgi navn på system/løsning -->
+                  <value>Documaster - DOTS</value>
+               </additionalElement>
+               <additionalElement name="archive">
+                  <!-- Oppgi navn på arkiv -->
+                  <value>fonds</value>
+               </additionalElement>
+            </additionalElements>
+         </context>
+         <content>
+            <additionalElements>
+               <additionalElement name="archivalPeriod">
+                  <properties>
+                     <property name="startDate">
+                        <!-- ÅÅÅÅ-MM-DD -->
+                        <value>2017-02-11</value>
+                     </property>
+                     <property name="endDate">
+                        <!-- ÅÅÅÅ-MM-DD -->
+                        <value>2017-02-11</value>
+                     </property>
+                  </properties>
+               </additionalElement>
+            </additionalElements>
+         </content>
+      </reference>
+      <dataObjects>
+         <dataObject name="Noark 5-arkivuttrekk">
+            <properties>
+               <property name="info">
+                  <properties>
+                     <property name="type">
+                        <value>Noark 5</value>
+                        <properties>
+                           <property name="version">
+                              <value>3.1</value>
+                           </property>
+                        </properties>
+                     </property>
+                     <property name="additionalInfo">
+                        <properties>
+                           <property name="periode">
+                              <properties>
+                                 <property name="inngaaendeSkille">
+                                    <!-- mykt/skarpt -->
+                                    <value>skarpt</value>
+                                 </property>
+                                 <property name="utgaaendeSkille">
+                                    <!-- mykt/skarpt -->
+                                    <value>skarpt</value>
+                                 </property>
+                              </properties>
+                           </property>
+                           <property dataType="boolean" name="inneholderSkjermetInformasjon">
+                              <!-- true/false  -->
+                              <value>false</value>
+                           </property>
+                           <property dataType="boolean" name="omfatterDokumenterSomErKassert">
+                              <!-- true/false  -->
+                              <value>false</value>
+                           </property>
+                           <property dataType="boolean" name="inneholderDokumenterSomSkalKasseres">
+                              <!-- true/false -->
+                              <value>false</value>
+                           </property>
+                           <property dataType="boolean" name="inneholderVirksomhetsspesifikkeMetadata">
+                              <!-- true/false -->
+                              <value>false</value>
+                           </property>
+                           <property dataType="integer" name="antallDokumentfiler">
+                              <!-- Oppgi antall dokumentfiler i arkivuttrekket her -->
+                              <value>3</value>
+                           </property>
+                        </properties>
+                     </property>
+                  </properties>
+               </property>
+            </properties>
+            <dataObjects>
+               <dataObject name="arkivstruktur">
+                  <properties>
+                     <property name="file">
+                        <properties>
+                           <property name="name">
+                              <value>arkivstruktur.xml</value>
+                           </property>
+                           <property name="format">
+                              <value>XML</value>
+                              <properties>
+                                 <property name="version">
+                                    <value>1.0</value>
+                                 </property>
+                              </properties>
+                           </property>
+                           <property name="checksum">
+                              <properties>
+                                 <property name="algorithm">
+                                    <value>SHA-256</value>
+                                 </property>
+                                 <property name="value">
+                                    <!-- Oppgi sjekksumverdi heksadesimalt for arkivstruktur.xml her  -->
+                                    <value>73597dc5cb5c193c2ee7013211a0927a5b149aea49c2885650c5871f43d9032e</value>
+                                 </property>
+                              </properties>
+                           </property>
+                        </properties>
+                     </property>
+                     <property name="schema">
+                        <value>main</value>
+                        <properties>
+                           <property name="file">
+                              <properties>
+                                 <property name="name">
+                                    <value>arkivstruktur.xsd</value>
+                                 </property>
+                                 <property name="format">
+                                    <value>XML</value>
+                                    <properties>
+                                       <property name="version">
+                                          <value>1.0</value>
+                                       </property>
+                                    </properties>
+                                 </property>
+                                 <property name="checksum">
+                                    <properties>
+                                       <property name="algorithm">
+                                          <value>SHA-256</value>
+                                       </property>
+                                       <property name="value">
+                                          <!-- Oppgi sjekksumverdi heksadesimalt for arkivstruktur.xsd her -->
+                                          <value>b89da6c744a8559a2311cef78c966b4be9497ecb62c08fc7e9d3b9ae1569e3ce</value>
+                                       </property>
+                                    </properties>
+                                 </property>
+                              </properties>
+                           </property>
+                           <property name="type">
+                              <value>XML Schema</value>
+                              <properties>
+                                 <property name="version">
+                                    <value>1.0</value>
+                                 </property>
+                              </properties>
+                           </property>
+                        </properties>
+                     </property>
+                     <property name="schema">
+                        <properties>
+                           <property name="file">
+                              <properties>
+                                 <property name="name">
+                                    <value>metadatakatalog.xsd</value>
+                                 </property>
+                                 <property name="format">
+                                    <value>XML</value>
+                                    <properties>
+                                       <property name="version">
+                                          <value>1.0</value>
+                                       </property>
+                                    </properties>
+                                 </property>
+                                 <property name="checksum">
+                                    <properties>
+                                       <property name="algorithm">
+                                          <value>SHA-256</value>
+                                       </property>
+                                       <property name="value">
+                                          <!-- Oppgi sjekksumverdi heksadesimalt for metadatakatalog.xsd her -->
+                                          <value>29cab7473ed02bb0dc2b1b7ec7573cd60c1c1c2141439af3b4af883f454c86b4</value>
+                                       </property>
+                                    </properties>
+                                 </property>
+                              </properties>
+                           </property>
+                           <property name="type">
+                              <value>XML Schema</value>
+                              <properties>
+                                 <property name="version">
+                                    <value>1.0</value>
+                                 </property>
+                              </properties>
+                           </property>
+                        </properties>
+                     </property>
+                     <property name="info">
+                        <properties>
+                           <property name="numberOfOccurrences">
+                              <value>mappe</value>
+                              <properties>
+                                 <property name="elementPath">
+                                    <value>//mappe</value>
+                                 </property>
+                                 <property dataType="integer" name="value">
+                                    <!-- Oppgi antall forekomster av mappe i arkivstruktur.xml her -->
+                                    <value>2</value>
+                                 </property>
+                              </properties>
+                           </property>
+                           <property name="numberOfOccurrences">
+                              <value>registrering</value>
+                              <properties>
+                                 <property name="elementPath">
+                                    <value>//registrering</value>
+                                 </property>
+                                 <property dataType="integer" name="value">
+                                    <!-- Oppgi antall forekomster av registrering i arkivstruktur.xml her -->
+                                    <value>3</value>
+                                 </property>
+                              </properties>
+                           </property>
+                        </properties>
+                     </property>
+                  </properties>
+               </dataObject>
+               <dataObject name="endringslogg">
+                  <properties>
+                     <property name="file">
+                        <properties>
+                           <property name="name">
+                              <value>endringslogg.xml</value>
+                           </property>
+                           <property name="format">
+                              <value>XML</value>
+                              <properties>
+                                 <property name="version">
+                                    <value>1.0</value>
+                                 </property>
+                              </properties>
+                           </property>
+                           <property name="checksum">
+                              <properties>
+                                 <property name="algorithm">
+                                    <value>SHA-256</value>
+                                 </property>
+                                 <property name="value">
+                                    <!-- Oppgi sjekksumverdi heksadesimalt for endringslogg.xml her -->
+                                    <value>29d30f2d55d316a4e073918ca67ef991cfa4565b03e24214e50820d20aeab16e</value>
+                                 </property>
+                              </properties>
+                           </property>
+                        </properties>
+                     </property>
+                     <property name="schema">
+                        <value>main</value>
+                        <properties>
+                           <property name="file">
+                              <properties>
+                                 <property name="name">
+                                    <value>endringslogg.xsd</value>
+                                 </property>
+                                 <property name="format">
+                                    <value>XML</value>
+                                    <properties>
+                                       <property name="version">
+                                          <value>1.0</value>
+                                       </property>
+                                    </properties>
+                                 </property>
+                                 <property name="checksum">
+                                    <properties>
+                                       <property name="algorithm">
+                                          <value>SHA-256</value>
+                                       </property>
+                                       <property name="value">
+                                          <!-- Oppgi sjekksumverdi heksadesimalt for endringslogg.xsd her -->
+                                          <value>454efcb3e48b7d8dc7b0bfc1123775dbcb895bfb03bc34eb3f14e88fa7dbba44</value>
+                                       </property>
+                                    </properties>
+                                 </property>
+                              </properties>
+                           </property>
+                           <property name="type">
+                              <value>XML Schema</value>
+                              <properties>
+                                 <property name="version">
+                                    <value>1.0</value>
+                                 </property>
+                              </properties>
+                           </property>
+                        </properties>
+                     </property>
+                     <property name="schema">
+                        <properties>
+                           <property name="file">
+                              <properties>
+                                 <property name="name">
+                                    <value>metadatakatalog.xsd</value>
+                                 </property>
+                              </properties>
+                           </property>
+                        </properties>
+                     </property>
+                  </properties>
+               </dataObject>
+               <dataObject name="loependeJournal">
+                  <properties>
+                     <property name="file">
+                        <properties>
+                           <property name="name">
+                              <value>loependeJournal.xml</value>
+                           </property>
+                           <property name="format">
+                              <value>XML</value>
+                              <properties>
+                                 <property name="version">
+                                    <value>1.0</value>
+                                 </property>
+                              </properties>
+                           </property>
+                           <property name="checksum">
+                              <properties>
+                                 <property name="algorithm">
+                                    <value>SHA-256</value>
+                                 </property>
+                                 <property name="value">
+                                    <!-- Oppgi sjekksumverdi heksadesimalt for loependeJournal.xml her -->
+                                    <value>84630668f3e262480536fe2b7ed7fc88bbce65c5e514c63be887a3d4abd60da0</value>
+                                 </property>
+                              </properties>
+                           </property>
+                        </properties>
+                     </property>
+                     <property name="schema">
+                        <value>main</value>
+                        <properties>
+                           <property name="file">
+                              <properties>
+                                 <property name="name">
+                                    <value>loependeJournal.xsd</value>
+                                 </property>
+                                 <property name="format">
+                                    <value>XML</value>
+                                    <properties>
+                                       <property name="version">
+                                          <value>1.0</value>
+                                       </property>
+                                    </properties>
+                                 </property>
+                                 <property name="checksum">
+                                    <properties>
+                                       <property name="algorithm">
+                                          <value>SHA-256</value>
+                                       </property>
+                                       <property name="value">
+                                          <!-- Oppgi sjekksumverdi heksadesimalt for loependeJournal.xsd her -->
+                                          <value>feef5b789397b0ffacd3d70244a7817b4f6ada4bcc2ed5009f0a1801be0a2c30</value>
+                                       </property>
+                                    </properties>
+                                 </property>
+                              </properties>
+                           </property>
+                           <property name="type">
+                              <value>XML Schema</value>
+                              <properties>
+                                 <property name="version">
+                                    <value>1.0</value>
+                                 </property>
+                              </properties>
+                           </property>
+                        </properties>
+                     </property>
+                     <property name="schema">
+                        <properties>
+                           <property name="file">
+                              <properties>
+                                 <property name="name">
+                                    <value>metadatakatalog.xsd</value>
+                                 </property>
+                              </properties>
+                           </property>
+                        </properties>
+                     </property>
+                     <property name="info">
+                        <properties>
+                           <property name="numberOfOccurrences">
+                              <value>journalregistrering</value>
+                              <properties>
+                                 <property name="elementPath">
+                                    <value>//journalregistrering</value>
+                                 </property>
+                                 <property dataType="integer" name="value">
+                                    <!-- Oppgi antall forekomster av journalregistrering i loependeJournal.xml her -->
+                                    <value>3</value>
+                                 </property>
+                              </properties>
+                           </property>
+                        </properties>
+                     </property>
+                  </properties>
+               </dataObject>
+               <dataObject name="offentligJournal">
+                  <properties>
+                     <property name="file">
+                        <properties>
+                           <property name="name">
+                              <value>offentligJournal.xml</value>
+                           </property>
+                           <property name="format">
+                              <value>XML</value>
+                              <properties>
+                                 <property name="version">
+                                    <value>1.0</value>
+                                 </property>
+                              </properties>
+                           </property>
+                           <property name="checksum">
+                              <properties>
+                                 <property name="algorithm">
+                                    <value>SHA-256</value>
+                                 </property>
+                                 <property name="value">
+                                    <!-- Oppgi sjekksumverdi heksadesimalt for offentligJournal.xml her -->
+                                    <value>c42b54b808f30091dd503dfd35addda7a1775ae71b34cd08bad9aad6d66c24e0</value>
+                                 </property>
+                              </properties>
+                           </property>
+                        </properties>
+                     </property>
+                     <property name="schema">
+                        <value>main</value>
+                        <properties>
+                           <property name="file">
+                              <properties>
+                                 <property name="name">
+                                    <value>offentligJournal.xsd</value>
+                                 </property>
+                                 <property name="format">
+                                    <value>XML</value>
+                                    <properties>
+                                       <property name="version">
+                                          <value>1.0</value>
+                                       </property>
+                                    </properties>
+                                 </property>
+                                 <property name="checksum">
+                                    <properties>
+                                       <property name="algorithm">
+                                          <value>SHA-256</value>
+                                       </property>
+                                       <property name="value">
+                                          <!-- Oppgi sjekksumverdi heksadesimalt for offentligJournal.xsd her -->
+                                          <value>a3eec68f2d5471eae518008eb374766ebc598f521e29c522d3d7fb9606e9c0a5</value>
+                                       </property>
+                                    </properties>
+                                 </property>
+                              </properties>
+                           </property>
+                           <property name="type">
+                              <value>XML Schema</value>
+                              <properties>
+                                 <property name="version">
+                                    <value>1.0</value>
+                                 </property>
+                              </properties>
+                           </property>
+                        </properties>
+                     </property>
+                     <property name="schema">
+                        <properties>
+                           <property name="file">
+                              <properties>
+                                 <property name="name">
+                                    <value>metadatakatalog.xsd</value>
+                                 </property>
+                              </properties>
+                           </property>
+                        </properties>
+                     </property>
+                     <property name="info">
+                        <properties>
+                           <property name="numberOfOccurrences">
+                              <value>journalregistrering</value>
+                              <properties>
+                                 <property name="elementPath">
+                                    <value>//journalregistrering</value>
+                                 </property>
+                                 <property dataType="integer" name="value">
+                                    <!-- Oppgi antall forekomster av journalregistrering i offentligJournal.xml her -->
+                                    <value>3</value>
+                                 </property>
+                              </properties>
+                           </property>
+                        </properties>
+                     </property>
+                  </properties>
+               </dataObject>
+            </dataObjects>
+         </dataObject>
+      </dataObjects>
+   </dataset>
+</addml>

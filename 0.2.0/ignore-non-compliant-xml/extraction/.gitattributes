@@ -1,0 +1,5 @@
+addml.xsd eol=crlf
+arkivstruktur.xsd eol=crlf
+endringslogg.xsd eol=crlf
+loependeJournal.xsd eol=crlf
+offentligJournal.xsd eol=crlf
